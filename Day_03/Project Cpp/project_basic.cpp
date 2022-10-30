@@ -5,23 +5,20 @@ using namespace std;
 //Parent Class
 class Vehicle
 {
-
     public:
 
         void honk()
         {
             cout << "This vehicle can honk!" << endl;
         }
-
 };
 
-//Child Class
+//Child Class Inheriting
 class Car: public Vehicle 
 {
 
 // Keeping variables Private (Access Specifier)
 private:
-
     string Name;
     string Model;
     int Year;
@@ -61,12 +58,12 @@ public:
 
 int main()
 {
-    // Example for Class COnstructor use
+    // Example for Class Constructor use
     Car c1 = Car("BMW", "X5", 2012);
     Car c2 = Car("BMW", "X7", 2018);
     Car c3 = Car("Ford", "Mustang", 2015);
 
-    // Encapsulation
+    // Abstraction
     c1.setName("BWM");
 
     // Usual Class Method
