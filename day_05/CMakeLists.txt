@@ -203,3 +203,11 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(talker src/pub.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+add_dependencies(talker day_05_generate_messages_cpp)
+
+add_executable(listener src/sub.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+add_dependencies(listener day_05_generate_messages_cpp)
