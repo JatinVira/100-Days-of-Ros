@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from day_05.srv import AddTwoInts, AddTwoIntsResponse
+from day_06.srv import AddTwoInts, AddTwoIntsResponse
 
 def handler(req):
     print("Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b)))
