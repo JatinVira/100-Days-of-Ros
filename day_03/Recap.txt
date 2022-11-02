@@ -1,0 +1,15 @@
+DAY 03  [100 Days of ROS]
+
+After learning Cpp, it was now time for me to implement it in a real project. I wanted to demonstrate various principles associated with Object Oriented Programming.
+
+In the first project, I wrote a simple Cpp program in which,
+I started by creating a class and subsequently an object of the class. I then proceeded to, add attributes( variables) and methods (functions) to mimic a real-world object.
+Then I experimented with things like Access Specifiers and #encapsulation to ensure my sensitive data is hidden from the user.
+I then implemented creating a Constructor for my class and calling it when creating an object.
+Next, I used #inheritance so that my child class had access to the attributes and methods of the parent class.
+I finally added an instance of #polymorphism to finish things up.
+
+In the second project, I used Shubham Nandi sir's idea to create a calculator application using OOPs. I could use the knowledge of #abstraction , Polymorphism, Encapsulation, and Inheritance to make it with some research and a lot of debugging.
+
+The code for all my experimentation and the previous summary for all days can now be found on my GitHub, it's still a work in progress and will get better with time (i hope)!
+Here is the link to my GitHub Repository: https://lnkd.in/dv2ePzxM

@@ -1,0 +1,9 @@
+DAY 05  [100 Days of ROS]
+
+Starting with #ros installation
+
+Dual Booting a system means running multiple operating systems on a machine. As ROS is a meta #os it requires another operating system at its base to function properly. Dual Booting is a bit frowned upon by many users. They fear they may lose all data and may end up bricking their device. Which is not at all true. Here's a video explaining in detail all the steps required to dual boot a PC (running win11). Make sure you download the right iso file for #ubuntu 20.04LTS:
+https://lnkd.in/d_3xSFy6
+
+Next, we will now install ROS inside our Ubuntu. ROS comes in various distributions, for us #Noetic is what we are targeting. Make sure you have Ubuntu 20.04 LTS, other version of the OS wouldn't support noetic. Here is another link to help you:
+https://lnkd.in/dExu9TJD

@@ -1,0 +1,21 @@
+After spending a reasonable amount of time going through the previously posted references I started with CPP, learning the syntax for different statements, checking out the keywords, and getting comfortable quantifying the logic into the programming language.
+I then shifted my focus toward the Object Oriented side of the language.
+
+Here are a few resources which helped me through this process.
+
+1. A walkthrough video on implementing the basics of OOPs in CPP
+https://lnkd.in/dv62mXWw by Saldina Nurak
+
+2. A more detailed video on implementing OOPs in C++ but with additions of more explanations, and a mini project at the end.
+https://lnkd.in/dwHzjtYb
+
+Similar resources for OOPs in Python are:
+
+1. A in-depth video for OOPs in Python
+https://lnkd.in/d_JMf4hz
+
+2. Very detailed video on the same (Highly Recommend)
+https://lnkd.in/dN8rpsAa
+
+If you are following these things, I hope you are getting more clarity and building a better foundation for advanced things to come next.
+In the next post, we will discuss using this knowledge to build a small project, to better understand things, and start with the hands-on approach.

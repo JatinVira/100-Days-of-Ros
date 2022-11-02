@@ -1,50 +1,7 @@
-DAY 01    [100 Days of ROS]
- 
-Earlier we made a list of things to cover. Let's start with the most fundamental thing on the list. Programming Languages. The most important ones curtailing our requirements are Python and Cpp.
- 
-Here are some resources for python that I've used:
+DAY 04  [100 Days of ROS]
 
-(YouTube)
-1. Good to revise python and see the implementation through a project 
-https://lnkd.in/dHWDT34Z
-2. Quick recap for python in under an hour
-https://lnkd.in/dbtEZ49q
-3. In-depth explanation of concepts 
-https://lnkd.in/dz9gRShH
-4. Focus on the OOPs side of python (essential with big ros projects)
-https://lnkd.in/dpZNcgr7
- 
-(Websites)
-1. W3schools
-https://lnkd.in/dpninh-c
-2. LearnPython
-https://lnkd.in/duzg4X9C
-3. Geeks for geeks 21-day guide
-https://lnkd.in/dhDfN3vs
-Extras 
-https://lnkd.in/d5ka3BrP
- 
+Meeting the #community .
+I had initially planned to carry out the 100 days of ROS challenge alone, but after posting a few developments on LinkedIn, I got a tremendous response from all fellow #robotics #engineers that they wanted to be a part of this series.
+I then made a #discordserver where everyone could participate, share resources, ask doubts and help each other out on this journey.
 
-Following are the resources I could accumulate for learning CPP:
-
-(Youtube)
-1. Why you should learn CPP (under 100 seconds)
-https://lnkd.in/dMigCuvF
-2. C++ basics in an hour
-https://lnkd.in/dfpesVXa
-3. Really extensive (31 hours)
-https://lnkd.in/d4WTiRpG
-
-Additional Recommendations:
-
-A great resource to learn Cpp also focuses on Object-oriented data structures, ordered and unordered data structures (recommended by Nicolas Z. Tan )
-https://lnkd.in/d5w3yxGb
-
-This amazing course on The Construct (Constructsim) covers essential CPP for robotics (recommended by Prateek Joshi ) [Big thanks Ricardo Tellez for the amazing lessons]
-https://lnkd.in/dqpYC3Tt
-
-Another great addition from Youtube covering good depths in CPP (recommended by Nidhi Koppikar )
-https://lnkd.in/d3uJbDk3
-
-A great youtube playlist for covering essential CPP concepts( Rohan Wadkar)
-https://lnkd.in/dnFPBHpw
+Here is a quick snippet from a google meet we had discussing our plan of action for the next few days. (P.S. see if you could spot yourself in this picture)
