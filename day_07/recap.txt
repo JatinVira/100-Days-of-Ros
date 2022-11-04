@@ -1,0 +1,26 @@
+DAY 07  [100 Days of ROS]
+
+Bag Files, TurtleSim and Github
+
+With a good amount of basics cleared on the last day,
+I could finally move to some hands-on experience. 
+I started with bag files and saw various implementations and use cases. 
+Recorded a few bag files with help of the rosbag command
+and used additional parameters to have fun. On playing back the bag file, 
+it struck me that they still weren't perfect and were utterly dependent upon
+the performance of a system to retrace the steps.
+You could learn all about bag files here:
+https://lnkd.in/dUzGbYkU
+
+Next, I moved on to TurtleSim. 
+It is really a very light simulator and could be used to learn a lot 
+about basic things like topics, nodes, ros messages, etc. 
+After spending some time with it, I used my previous knowledge of bag files
+to record and playback the shape traced in turtlesim.
+More about turtlesim here:
+https://lnkd.in/dUipErEW
+
+Finally, I moved to work on my GitHub repo and have started adding relevant details
+and beautifying it for a better presentation.
+You can find my GitHub repo here:
+https://lnkd.in/dv2ePzxM
