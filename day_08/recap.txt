@@ -1,0 +1,20 @@
+DAY 08  [100 Days of ROS]
+
+Deeper into Github
+
+Github, an amazing internet hosting service for unmatched software development and version control. I'm pretty sure many of you might have already worked with it and tried the amazing features they have to offer.
+I was personally overwhelmed whenever I saw any git integration as I didn't know much about how it worked, and it seemed nearly impossible to keep a track of the various features. Thus, I decided it was necessary to focus on it for a day.
+
+I started by watching a few videos describing the environment, features, and background of how #git worked. I then created a few repositories, understood the relevance of the staging area, how to add files, delete them, snapshots of files, commit the files, and finally revert to a version whenever we mess things up. I also set up git configuration on my machine and saw integration with applications like VS Code and Sublime, not to mention great extensions like GitLens.
+Here are a few resources that I used for learning GitHub:
+1. Git tutorial in an hour
+https://lnkd.in/dhZ-byah
+2. Git and Github for beginners
+https://lnkd.in/ddeRSvp7
+
+After this, I spent some time browsing various #github repos and decided to contribute to an amazing repo by Mathias Mantelli as a way of implementing this new knowledge. His #repo has inexhaustive content related to Mobile Robotics and AI.
+So I forked the repo, made some changes, and opened up a pull request. You could check out his GitHub repository here:
+https://lnkd.in/d8TvEByR
+
+To keep a track of these 100 days of #ros , you could check out my GitHub repository:
+https://lnkd.in/dv2ePzxM
