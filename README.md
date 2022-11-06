@@ -17,3 +17,4 @@ and in a fashion which a complete beginner in robotics can follow alongside too.
 
 
 ![Discord Banner 2](https://discordapp.com/api/guilds/1034800149152673853/widget.png?style=banner2)
+<iframe src="https://discord.com/widget?id=1034800149152673853&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
