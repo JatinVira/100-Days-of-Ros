@@ -1,6 +1,6 @@
 # 100 DAYS OF ROS CHALLENGE
 
-![alt text](https://github.com/[JatinVira]/[100-Days-of-ROS]/blob/[master]/image/Cover.jpg?raw=true)
+![alt text](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/Cover.jpg?raw=true)
 
 Throughout my journey as a budding robotics engineer,
 i found many domains and technologies which were closley 
