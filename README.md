@@ -13,7 +13,3 @@ Robot Operating System (ROS) used almost in every advanced project.
 
 This is my journey trying to learn these concepts one at a time, 
 and in a fashion which a complete beginner in robotics can follow alongside too.
-
-
-
-![Discord Banner 2](https://discord.com/api/guilds/1034800149152673853/widget.json?style=banner2)
