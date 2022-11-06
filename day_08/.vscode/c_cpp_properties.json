@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/jatinvira/catkin_ws/devel/include/**",
+        "/home/jatinvira/catkin_ws/src/beginner_tutorials/include/**",
+        "/home/jatinvira/catkin_ws/src/100-Days-of-Ros/day_06/include/**",
+        "/home/jatinvira/catkin_ws/src/test_pkg/include/**",
+        "/home/jatinvira/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/jatinvira/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
