@@ -1,0 +1,3 @@
+Day 12
+Coordinate Transformations
+Started by learning Euclidean Geometry and describing the 2D coordinates in a matrix. Then studied carrying out Translation, Rotation, and Scale Change individually and combined in a Euclidean Space. These concepts are very important and lay the foundation for Kinematics.
