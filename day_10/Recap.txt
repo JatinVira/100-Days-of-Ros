@@ -1,0 +1,23 @@
+Introduction to Robotics
+
+The track from here is going to be fun. There are many trails that one can follow. Each leads to a different outcome. Thus all other things, which are not a part of ROS can start now!
+
+Here are a few resources I have been going through to better clarify my foundation about the basics of Robotics and gain insights on the topics mentioned above.
+1. The Basics of Robotics theory - The Construct
+https://lnkd.in/deaWcbk7
+It briefly hits on almost all topics including kinematics, dynamics, perception manipulation, etc. Check it out for sure!
+
+2. Robotics 101 by Engineering Simpified
+https://lnkd.in/dUrKbbbv
+This is such a short yet comprehensive guide to learning robot kinematics, coordinate transformation, homogenous transformation, jacobians, singularity, etc. Again personally recommended.
+
+3. Robotics101 by SparkFun Electronics
+https://lnkd.in/dyq2gPKj
+Talks about basic concepts like different forms of motion, mechanical structures, etc. A good playlist to work on these basics.
+
+4. Basics for Robotics by Cyrill Stachniss
+https://lnkd.in/dbqkCkcb
+Absolutely in love with this playlist covering basics like probability primer, 3D coordinates, representation of rotations, Homogenous coordinates, etc just to name a few. and this is just a start. There are many playlists covering different domains. Do check out his channel.
+
+I will reduce posting content out here on daily basis to help reach out to more people, but my GitHub repo will get regular updates
+https://lnkd.in/dv2ePzxM
