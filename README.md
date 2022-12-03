@@ -32,19 +32,19 @@ This is my journey trying to learn these concepts one at a time,  and in a fashi
 
 ## Pick your Poison:  
 
-| Contents                             | Day Covered   | 
-| ------------------------------------ |:-------------:| 
-| Basics of Python, C++                | day_01 | 
-| Object oriented programming          | day_01 , day_02| 
-| OOPs Project                         | day_03|  
-| Dual Booting, ROS Installation       | day_05|  
-| ROS Basics (Filesystem, Nodes, Topics, Parameter )  | day_06|  
-| ROS Basics (Bag Files TurtleSim )    | day_07|  
-| GitHub ( Repo, Readme, GUI, CLI Tools) | day_07, day_08 | 
-| ROS Mini Project (TurtleSim, PubSub Services ) | day_09 | 
-| Robotics Basics                      | day_10 | 
+| Contents                                                    | Day Covered                            | 
+| --------------------------------------------------- --------|:-------------:                         | 
+| Basics of Python, C++                                       | day_01                                 | 
+| Object oriented programming                                 | day_01 , day_02                        | 
+| OOPs Project                                                | day_03                                 |  
+| Dual Booting, ROS Installation                              | day_05                                 |  
+| ROS Basics (Filesystem, Nodes, Topics, Parameter )          | day_06                                 |  
+| ROS Basics (Bag Files TurtleSim )                           | day_07                                 |  
+| GitHub ( Repo, Readme, GUI, CLI Tools)                      | day_07, day_08                         | 
+| ROS Mini Project (TurtleSim, PubSub Services )              | day_09                                 | 
+| Robotics Basics                                             | day_10                                 | 
 | Robotics Theory  (Probability, Bayes Filter, 
 Coordinate Transformations, Representation of Rotations, etc) | day_11, day_12, day_13, day_14, day_15 | 
-| Kinematics Theory                    | day_16, day_17, day_18, day_19, day_20 |
+| Kinematics Theory                                           | day_16, day_17, day_18, day_19, day_20 |
 
 --------------------------
