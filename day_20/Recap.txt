@@ -1,0 +1,5 @@
+Inverse Kinematics
+Here, we will try to obtain the various robot parameters in terms of the joint angles, link lengths, etc 
+to make sure our robot can traverse to a point in space. We use forwards Kinematics and obtain certain 
+equations to find unknowns.
+https://lnkd.in/dai74xgf

@@ -1,0 +1,8 @@
+Forward Kinematics
+Given a set of links, joints, and a few defining parameters, identifying where the end effector 
+will reach is what we know as Forwards KInematics. It uses previously built knowledge from 
+representing systems in their Homogenous Frames and coupling various translations, rotations, etc. 
+In the end, we could easily find the position and orientation of a Robot in Euclidean Space.
+Also solving a few numerical would really clear your fundamentals.
+https://lnkd.in/dzAuMQst
+https://lnkd.in/duqMUSMZ
