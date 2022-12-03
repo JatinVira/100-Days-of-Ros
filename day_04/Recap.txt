@@ -1,7 +1,11 @@
 DAY 04  [100 Days of ROS]
 
 Meeting the #community .
-I had initially planned to carry out the 100 days of ROS challenge alone, but after posting a few developments on LinkedIn, I got a tremendous response from all fellow #robotics #engineers that they wanted to be a part of this series.
-I then made a #discordserver where everyone could participate, share resources, ask doubts and help each other out on this journey.
+I had initially planned to carry out the 100 days of ROS challenge alone, 
+but after posting a few developments on LinkedIn, I got a tremendous response
+from all fellow #robotics #engineers that they wanted to be a part of this series.
+I then made a #discordserver where everyone could participate, share resources,
+ask doubts and help each other out on this journey.
 
-Here is a quick snippet from a google meet we had discussing our plan of action for the next few days. (P.S. see if you could spot yourself in this picture)
+Here is a quick snippet from a google meet we had discussing our plan of action
+for the next few days. (P.S. see if you could spot yourself in this picture)

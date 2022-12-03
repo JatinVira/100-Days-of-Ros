@@ -1,13 +1,18 @@
 ROS Basics
 
 After finally completing the prerequisites and the installation, I could now start with #ros .
-I started by checking the ROS filesystem tools, general exploration, creating a few #workspace , and sourcing them, then proceeded to create a package and experimented with some more features of Catkin.
+I started by checking the ROS filesystem tools, general exploration, creating a few #workspace, 
+and sourcing them, then proceeded to create a package and experimented with some more features of Catkin.
 I then tried to understand core concepts like Nodes, Topics, Master, Parameter Server, Services, etc.
-After this, I implemented a simple publisher and subscriber node (which lays the foundation of 90% ROS systems) in Python and Cpp and learned the way to build these files. I then proceeded to implement a Service and Client using Python.
+After this, I implemented a simple publisher and subscriber node (which lays the foundation of 90% ROS systems) 
+in Python and Cpp and learned the way to build these files. I then proceeded to implement a Service and Client
+using Python.
 Within this process, I also learned how to generate custom message files and their corresponding source files.
 
-In the second half of the day, I decided to move this entire system on a #github #repository for ease of access and implementation for people following me on this journey.
-So i started documenting everything and finally have a repo to share where you could find this daily breakdown and the code I've developed every day!
+In the second half of the day, I decided to move this entire system on a #github #repository for ease of access
+and implementation for people following me on this journey.
+So i started documenting everything and finally have a repo to share where you could find this daily breakdown
+and the code I've developed every day!
 
 Here are a few resources for learning the basics of ROS that you'd love :
 1. The ROS Wiki

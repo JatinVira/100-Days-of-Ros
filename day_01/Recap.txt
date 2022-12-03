@@ -1,6 +1,7 @@
 DAY 01    [100 Days of ROS]
  
-Earlier we made a list of things to cover. Let's start with the most fundamental thing on the list. Programming Languages. The most important ones curtailing our requirements are Python and Cpp.
+Earlier we made a list of things to cover. Let's start with the most fundamental thing on the list. 
+Programming Languages. The most important ones curtailing our requirements are Python and Cpp.
  
 Here are some resources for python that I've used:
 
@@ -37,10 +38,12 @@ https://lnkd.in/d4WTiRpG
 
 Additional Recommendations:
 
-A great resource to learn Cpp also focuses on Object-oriented data structures, ordered and unordered data structures (recommended by Nicolas Z. Tan )
+A great resource to learn Cpp also focuses on Object-oriented data structures, 
+ordered and unordered data structures (recommended by Nicolas Z. Tan )
 https://lnkd.in/d5w3yxGb
 
-This amazing course on The Construct (Constructsim) covers essential CPP for robotics (recommended by Prateek Joshi ) [Big thanks Ricardo Tellez for the amazing lessons]
+This amazing course on The Construct (Constructsim) covers essential CPP for robotics 
+(recommended by Prateek Joshi ) [Big thanks Ricardo Tellez for the amazing lessons]
 https://lnkd.in/dqpYC3Tt
 
 Another great addition from Youtube covering good depths in CPP (recommended by Nidhi Koppikar )

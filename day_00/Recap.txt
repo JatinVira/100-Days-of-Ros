@@ -1,15 +1,18 @@
 DAY 00 [100 Days of ROS]
 
-After spending a reasonable amount of time going through various courses, job postings, etc. I have finally boiled down the following things that I want to cover in this series:
+After spending a reasonable amount of time going through various courses, job postings, etc. 
+I have finally boiled down the following things that I want to cover in this series:
 
 0. ROS Fundamentals (Basic through intermediate)
 [Includes stuff like nodes, topics, master, service, action, and intermediate stuff like tf, custom messages]
 1. computer vision
-[Exploring different packages like Numpy, image basics, image segmentation, image processing, object detection, object tracking, and a bit about #deeplearning ]
+[Exploring different packages like Numpy, image basics, image segmentation, image processing, object detection, 
+object tracking, and a bit about #deeplearning ]
 2. Robot Kinematics
 [basic forward kin, velocity kin, statics, inverse kin, kin of closed chains, application to robotic systems]
 3. Control Systems
-[Controllers like P, PI, PID, tuning of controllers, applying it to a real system(includes coding and working on a project) ]
+[Controllers like P, PI, PID, tuning of controllers, applying it to a real system(includes coding and 
+working on a project) ]
 4. Path Planning and associated Algorithms
 [Djisktras, A*, BFS, DFS, Heuristics, etc, and try deploying the approaches using ROS ]
 5. ros2
@@ -21,8 +24,10 @@ After spending a reasonable amount of time going through various courses, job po
 9. Working with 32 Bit microcontrollers, etc.
 (Also includes stuff like STM controllers programming, bareback, etc)
 10. Advanced concepts of ros
- [ Localisation, Mapping, #slam , Nav Stack, Sensor Fusion, Perception, Manipulation, Hardware integration, Master-slave communication]
-Also apply and understand these core principles to stuff like #uavs , Quadrupeds, #agvs , #amrs , ROVs, etc, and work on them as full-fledged projects.
+ [ Localisation, Mapping, #slam , Nav Stack, Sensor Fusion, Perception, Manipulation, Hardware integration, 
+ Master-slave communication]
+Also apply and understand these core principles to stuff like #uavs , Quadrupeds, #agvs , #amrs , ROVs, etc, 
+and work on them as full-fledged projects.
 11. #simulations of designed robots
 ( Robot design, #cad , conversion to URDF, integration in ROS, Exploring Gazebo plugins, etc)
 
