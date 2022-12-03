@@ -33,7 +33,7 @@ This is my journey trying to learn these concepts one at a time,  and in a fashi
 ## Pick your Poison:  
 
 | Contents                                                    | Day Covered                            | 
-| --------------------------------------------------- --------|:-------------:                         | 
+| ------------------------------------------------------------|:--------------------------------------:| 
 | Basics of Python, C++                                       | day_01                                 | 
 | Object oriented programming                                 | day_01 , day_02                        | 
 | OOPs Project                                                | day_03                                 |  
