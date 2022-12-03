@@ -1,6 +1,9 @@
 Understanding Kinematics and Modelling
+
 Getting to know how different links and joints merge to create linkages for several motions
 and analyzing this motion leads us to Kinematics.
+
+More about them here:
 https://lnkd.in/dsEYdWtW
 https://lnkd.in/dubhVEx3
 https://lnkd.in/dzAuMQst

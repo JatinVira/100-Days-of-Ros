@@ -2,9 +2,17 @@ Day 9 [100 Days of ROS]
 
 ROS Mini Project
 
-After having completed the ROS basics, it's time to implement it on a small project to test the learning. I decided to do a project on turtlesim to trace a path.
-It's very easy to draw basic shapes, so I wanted to try something complex. I decided to write ROS with turtlesim but using topics and services to achieve this feat.
-I used a simple pub-sub model clubbed with a service client to teleport my turtle, make it lift the pen up and down, and finally make it trace a programmed path. I decided to opt for an open-loop control system to reduce the complexity. After having complemented the program, I analyzed it to find that the structured manner was difficult to interface with various variables. Thus I will now move this code to an object-oriented paradigm and see how much of a difference it will make.
+After having completed the ROS basics, it's time to implement it on a small project to test the learning. 
+I decided to do a project on turtlesim to trace a path.
+It's very easy to draw basic shapes, so I wanted to try something complex. 
+I decided to write ROS with turtlesim but using topics and services to achieve this feat.
+I used a simple pub-sub model clubbed with a service client to teleport my turtle, 
+make it lift the pen up and down, and finally make it trace a programmed path. 
+I decided to opt for an open-loop control system to reduce the complexity. 
+After having complemented the program, I analyzed it to find that the structured manner was 
+difficult to interface with various variables. 
+
+Thus I will now move this code to an object-oriented paradigm and see how much of a difference it will make.
 
 You can find the source code on my GitHub repo here:
 https://lnkd.in/dv2ePzxM

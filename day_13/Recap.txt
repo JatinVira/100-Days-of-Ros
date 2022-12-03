@@ -1,7 +1,15 @@
-Day 13
 Representation of Rotations
-Rotation is a very essential part of any ecosystem. There are various ways to represent these Rotations. Rotation Matrices by far are the most convenient and offer direct Rotation from one point to another with only a few parameters required to describe the rotation.
-Euler Angles are another popular choice as they are intuitive to understand. But they could quickly end up as troublemakers in case of a Gimbal Lock.
-#Quaternions are the necessary evil, although they just cannot be understood intuitively by humans, they offer wonderful properties and perfectly describe the 3 Dimensional rotations as they are 4D numbers.
-There exist ways to convert to and from these representations. There are pros and cons to all methods, thus it's best to use the approach most applicable in the required scenario.
-All about them here: https://lnkd.in/guPHSKJw
+
+Rotation is a very essential part of any ecosystem. There are various ways to represent these Rotations. 
+Rotation Matrices by far are the most convenient and offer direct Rotation from one point to another
+with only a few parameters required to describe the rotation.
+
+Euler Angles are another popular choice as they are intuitive to understand. 
+But they could quickly end up as troublemakers in case of a Gimbal Lock.
+
+#Quaternions are the necessary evil, although they just cannot be understood intuitively by humans, 
+they offer wonderful properties and perfectly describe the 3 Dimensional rotations as they are 4D numbers.
+There exist ways to convert to and from these representations. 
+There are pros and cons to all methods, thus it's best to use the approach most applicable in the required scenario.
+All about them here: 
+https://lnkd.in/guPHSKJw

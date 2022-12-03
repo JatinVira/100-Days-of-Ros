@@ -1,7 +1,10 @@
 Coordinate Transformation and Rotations, Homogenous Transforms
+
 Finally jumping into representing this link in a form, where we could easily write about 
 translations, rotations, scaling, etc. Also learned about Rotation Matrices in 2D and 3D Planes. 
 And studied the disadvantages of using standard Coordinate Transforms. 
 Finally moving on to representing these things in Homogenous Frames.
+
+More about them here:
 https://lnkd.in/dshcXC75
 https://lnkd.in/dDfygJEm

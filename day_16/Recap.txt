@@ -3,21 +3,33 @@ Robot Kinematics
 A study of the relationship between a robot's joint coordinates and its spatial layout. 
 Kinematics has a special emphasis on robotics. In simple terms, we use it to understand 
 the various motions of a manipulator. Here are a few resources to learn kinematics from scratch.
+
 1. A playlist by Engineering Simplified
 https://lnkd.in/dfU8rud2
-2. IITM's playlist (sections 1 - 2)
+
+2. IITM's playlist 
+(sections 1 - 2)
 https://lnkd.in/dRvqegdB
-3. Robotics by Prof. DK Pratihar (sections 1 - 29)
+
+3. Robotics by Prof. DK Pratihar 
+(sections 1 - 29)
 https://lnkd.in/dGV94nxc
+
 4. A great blog by Roboacademy
 https://lnkd.in/dQymeDjb
+
 5. A great blog by the University of Illinois
 https://lnkd.in/dQyrbN7B
-6. Modern Robotics by Northwestern Robotics (Chapters 1 - 7)
+
+6. Modern Robotics by Northwestern Robotics 
+(Chapters 1 - 7)
 https://lnkd.in/dKZRzNQn
 
 Degrees of Freedom
-This relates to the Freedom a body has for its various movements in Euclidean Space. The number of constraints acting on a system reduces this freedom and leaves us with a number representing the real freedom of the body.
-more about it here :
+This relates to the Freedom a body has for its various movements in Euclidean Space. 
+The number of constraints acting on a system reduces this freedom and leaves us 
+with a number representing the real freedom of the body.
+
+More about it here :
 https://lnkd.in/d7EeuVEC
 https://lnkd.in/dX3pf37a

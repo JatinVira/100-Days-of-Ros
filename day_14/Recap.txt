@@ -1,3 +1,9 @@
-Day 14
 Homogenous Coordinates
-A wonderful coordinate system used for projective geometry thus can be used for things like mapping a 3D point into a 2D plane. A major advantage is that they could be used for describing several transformations in matrices. This could help club them together using Matrix Multiplication. It is also comparatively easy to convert from Euclidean to Homogenous systems. More information about them is here: https://lnkd.in/g9evVmbn
+
+A wonderful coordinate system that is used for projective geometry, 
+thus can be used for things like mapping a 3D point into a 2D plane. 
+A major advantage is that they could be used for describing several transformations in matrices. 
+This could help club them together using Matrix Multiplication. 
+It is also comparatively easy to convert from Euclidean to Homogenous systems. 
+More information about them is here: 
+https://lnkd.in/g9evVmbn

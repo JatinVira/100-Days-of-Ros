@@ -1,4 +1,12 @@
-Day 11
 Probability Primer & Recursive Bayes Filter
-Started by learning about a few axioms in Probability theory, Then saw the meaning of Discrete and Continuous Random Variables. Understood what is Joint and conditional probability, the Law of Total Probability, Marginalization, etc. Used all of this foundation to then learn about Bayes Rule which is the groundwork for Bayes Filter.
-I learned all these things as the world around us is best described in Probability clouds than discrete actions., and these things are used extensively to create algorithms for SLAM. You could learn all this here: https://lnkd.in/g66V6iQX
+Started by learning about a few axioms in Probability theory, 
+Then saw the meaning of Discrete and Continuous Random Variables. 
+Understood what is Joint and conditional probability, the Law of Total Probability, 
+Marginalization, etc. Used all of this foundation to then learn about Bayes Rule 
+which is the groundwork for Bayes Filter.
+
+I learned all these things as the world around us is best described in Probability clouds
+than discrete actions. And these things are used extensively to create algorithms for SLAM. 
+
+You could learn all this here: 
+https://lnkd.in/g66V6iQX

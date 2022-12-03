@@ -1,4 +1,9 @@
-Day 15
 Least Squares
-They help us to estimate parameters based on observation. They take in an observation state estimation and output a predicted observation, then compare the two and evaluate the error to better update the input state to reach a stage where the error is least present.
-Read about them here: https://lnkd.in/gHfhpdP3
+
+They help us to estimate parameters based on observation. 
+They take in an observation state estimation and output a predicted observation, 
+then compare the two and evaluate the error to better update the input state to 
+reach a stage where the error is least present.
+
+Read about them here: 
+https://lnkd.in/gHfhpdP3
