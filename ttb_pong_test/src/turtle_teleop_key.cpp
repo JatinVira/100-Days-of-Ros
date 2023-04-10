@@ -182,8 +182,8 @@ TeleopTurtle::TeleopTurtle():
   nh_.param("scale_angular", a_scale_, a_scale_);
   nh_.param("scale_linear", l_scale_, l_scale_);
 
-  twist_left_pub_ = nh_.advertise<geometry_msgs::Twist>("Left/cmd_vel", 1);
-  twist_right_pub_ = nh_.advertise<geometry_msgs::Twist>("Right/cmd_vel", 1);
+  twist_left_pub_ = nh_.advertise<geometry_msgs::Twist>("Right/cmd_vel", 1);
+  twist_right_pub_ = nh_.advertise<geometry_msgs::Twist>("Left/cmd_vel", 1);
 }
 
 void quit(int sig)
@@ -233,8 +233,8 @@ void TeleopTurtle::keyLoop()
 
   puts("Reading from keyboard");
   puts("---------------------------");
-  puts("Use arrow keys to move the turtle. 'q' to quit.");
-
+  puts("Use up and down keys to move the left  turtle.");
+  puts("Use w  and s    keys to move the right turtle.");
 
   for(;;)
   {
