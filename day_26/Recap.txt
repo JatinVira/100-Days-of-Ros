@@ -1,0 +1,29 @@
+Building Cool ROS Projects
+
+(In Short :
+Finding FUN ROS projects, making them, and sharing the process of building)
+
+Up until now, 25 days have elapsed, which I've utilized to cover many concepts like Basic programming, Intro to OOPs, ROS basics, Control Systems, Robotics Theory, Kinematics, etc.
+But honestly, nothing of it holds any value if you can't apply these concepts to some problem statement and devise a working solution out of it.
+
+This brings me to PROJECTS.
+Learning through implementing #projects is a highly effective way to master a new skill or technology, especially for learning #ros .
+By working on projects that require you to apply ROS concepts and tools in a practical setting, you gain a deeper understanding of how ROS works and develop the skills and confidence to tackle more complex robotics challenges in the future.
+
+Thus I embarked upon searching for some #opensource projects where I can use the previously mentioned skills and make something fun out of it.
+Fun for me to make.
+Fun for others to join in too.
+
+And thus I encountered the following resources:
+https://lnkd.in/d9HfsAHG
+https://lnkd.in/dB3-7xwQ
+https://lnkd.in/d2T--ZVU
+And tons more.
+
+I compiled through a lot of them until I found something FUN,
+which I will disclose in the next post.
+But I felt more than just making a project...
+I should properly document my building methodology, and the logic I follow to reach there. That essentially can help anyone to make anything they wish. So a few next days will cover this methodology in detail, shedding light on how to tackle this problem.
+
+Here is a link to the GitHub repo where all this is happening:
+https://lnkd.in/dv2ePzxM
