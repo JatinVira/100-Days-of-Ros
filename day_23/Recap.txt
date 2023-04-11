@@ -1,0 +1,4 @@
+This amazing video playlist covers control systems in quite a lot of depth, 
+and talks about PID controllers, and appropriate use cases, 
+it also has a guide at the end for tuning methods. 
+https://lnkd.in/d-wnmPva

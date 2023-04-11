@@ -1,0 +1,25 @@
+Control Systems
+
+Control systems are important in robotics because they allow robots to perform tasks accurately and repeatably. 
+Robots often have to deal with a complex and dynamic environment, and control systems help them to do so by 
+allowing them to sense their surroundings, make decisions, and execute tasks.
+
+They are used for:
+
+1. Controling the motion of the robot:
+Control systems can be used to control the motion of the robot's joints and end effectors 
+(e.g., grippers or welding torches).
+
+2. Sense the environment:
+Control systems can be used to process data from sensors (e.g., cameras, lidar, or sonar)
+to help the robot understand its environment and make decisions.
+
+3. Execute tasks:
+Control systems can be used to execute functions by coordinating the motion of the robot and 
+its end effectors in response to sensor data.
+
+Day Breakdown:
+Focus on learning the theory behind control systems. 
+This will take quite a long time but once you have a good foundation we can focus on different types of controllers.
+This playlist by Brian Douglas will really help,
+https://lnkd.in/dxWFvJZF

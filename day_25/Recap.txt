@@ -1,0 +1,8 @@
+Exploring another in-depth video of applying PID controllers to a self-balancing robot, 
+going through theory, code, implementation, tuning, and testing.
+Here is the video for the same https://lnkd.in/d9qEMPgY
+
+To use these things in ROS we have a readymade package which can be found here. 
+http://wiki.ros.org/pid
+
+Experiment with tuning the parameters and see how they affect the various parameters.

@@ -1,0 +1,2 @@
+Let's start by learning about simple controllers like P, PI, PD, PID, etc, and understand their theory.
+This video by EEVAcademy is great EEV academy https://lnkd.in/dcxsasZq
