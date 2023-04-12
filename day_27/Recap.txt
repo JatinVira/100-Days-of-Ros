@@ -1,0 +1,35 @@
+Ping Pong with TurtleSim
+
+After searching through a lot of projects,
+I settled down on trying to recreate a version of
+TurtleSim Ping Pong!
+
+I drew my inspiration from Lentin Joseph sir's post on robotacademy
+where he mentions this project made by Franz Pucher. 
+I immediately fell in love with this project.
+
+Not only was the project simple to understand, but it also was easy to tinker with and recreate.
+I could see so many essential concepts like the PubSub model, Services, Kinematics, etc 
+were utilized to build it and it rewarded very handsomely by being able to play with your final developed project.
+
+So I cloned the repo locally (thanks to the power of #opensource ) and started reading through how it was implemented. 
+The project had a launch file that runs different ros nodes in succession. Here's the breakup:
+1. An init node will be called to launch all packages and set them up in a way ready
+with multiple turtles subbed to their respective cmd_vels.
+2. Another node that will control the entire logic for the ball bouncing around in the arena. 
+Things like checking or bounds, making it traverse from one point to another, teleporting on edge cases, etc.
+3. A traditional teleop_key node to help move the two turtles and hit the ball.
+
+And that's it. That is all there is to this wonderful project.
+In the remaining time, I went through the source code in detail and made a few keynotes
+on what I wanted to do differently in my version of Ping Pong.
+
+In the next few days, I will hit on the topics of how you reverse engineer such projects, 
+go about writing sample code to test the functionality of small segments, and eventually 
+package everything in a nice little folder. Hang around for that.
+
+P.S. If you're still reading make sure to star the repo here...
+https://lnkd.in/dv2ePzxM
+
+Until then, here is a quick sneak peek of the completed project...
+Happy Building !!!
