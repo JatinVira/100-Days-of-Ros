@@ -1,0 +1,27 @@
+Day 28 [100 days of ROS]
+
+Reverse Engineering a Project
+
+In this post, we will specifically understand how to break a package into different modules and tackle each one appropriately.
+
+For our eg, we have TurtleSim Pong (https://lnkd.in/dnC_triR). Here are a few things I do to make sense of things:
+1. I start by running all the nodes (mentioned earlier) and just playing the game, trying to visually make sense of what's happening.
+2. I then use tools like ` rostopic echo ` to see all the messages coming and going out of various topics and see what actions cause these changes.
+3. Then there is always the notorious old way of looking inside source code and analyzing what's happening and why, but that's boring who does that!
+4. Then we can use ` rostopic pub /topicname "message" ` to just test whether an intended message is causing something expected to happen.
+5. Similar process can be applied to the ` rosservice call /servicename "message" ` to test the logic for services, etc.
+6. A very important tool ` rqt_graph ` can help visually understand the communication flow.
+
+And that's it. That's all there is to reverse engineer a package/ project. Sounds easy right? Let's apply it to our example and see how it follows:
+
+1. On running all nodes and playing, it's evident the entire logic for the program is divided in a way where we observe that The ball_node just moves the ball, the Teleop_node will only move the two-player turtles, and init_node will spawn the 3 turtles.
+2. Using rostopic echo, we find that the ball is using /cmd_vel topic to move around in the arena, and the two-player turtle is also using /cmd_vel topics to move their positions.
+3. Skipping step 3, Who cares lol.
+4. On using rostopic pub, we can further confirm that the three turtles respond to that and move their positions according to the message given.
+5. rosservice list, echo, and pub gave insights that services were being used to init and spawn the turtles in place, And to teleport the ball in case it went out of bounds.
+6. Running rqt_graph just helps us to confirm all these assumptions and lets us find a new thing that the system follows a closed loop control system. This reading into the source code explains tracking the pose (location) of both ball and turtle for carrying out appropriate actions.
+
+These key observations are ready and we can proceed to the next step, Rapid prototyping with a solution trying to cover all of these things in a solution. This we will discuss in the next post.
+
+Make sure to follow me to get updates on the next posts in the series.
+You can find the repo here https://lnkd.in/dv2ePzxM
