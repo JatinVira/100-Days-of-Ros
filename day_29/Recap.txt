@@ -1,0 +1,20 @@
+Rapid Prototyping of Solution
+
+In the last post, we observed that the key deliverables for this project will be:
+1. A init_node that can spawn turtles, teleport them to their initial position, turn off the pen to remove any trace marks, etc will be used. It will be using services to accomplish all this.
+2. A ball_node will control the logic of the turtle bouncing around, keeping it within player bounds, function independently, continuously populate its position on /pose a topic and move using /cmd_vel.
+3. A teleop_node will control the two turtles independently, send their position to their respective /pose topics, and also move around using /cmd_vel topics.
+4. A launch file to automate the process of spawning all these nodes and displaying crucial information on the terminal.
+
+Let's start work on this by creating a node for each application.
+1. A simple Pub node that kills the current turtle on screen, will launch 3 new turtles at their respective location using /spawn service. And turn the pen for all of them. It will be launched after calling turtlesim.
+2. The ball_node is tricky as it involves tracking its collision information, and driving the turtle continuously, so we just move around and on going outside the operable bounds simply teleport back into playing space. And by tracking the collision between turtles and balls, we can impart new moving trajectories to the ball.
+3. Teleop_node is simple, we use the standard teleop node provided by turtlesim and add a few things, First, we will set it up to take inputs from unique keys on the keyboard. Then we give each key a specific movement and publish a new message to cmd_vel on detecting a key press.
+4. We now just take a new launch file, add the contents to the launch turtlesim node, and the aforementioned three files one after the other.
+
+And with that voila!
+We have a working prototype of the expected solution.
+All the code for this has been updated on the day_29 package on GitHub.
+Now we just need to work on the aesthetics of the project in a way that its easy to understand and use, while ensuring coding standards are met.
+
+This, we will cover in the next post.
