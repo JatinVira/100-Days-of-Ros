@@ -1,53 +1,60 @@
 #!/usr/bin/env python3
 
-# Importing essential ROS packages
-import rospy
-from turtlesim.msg import Pose
-from turtlesim.srv import TeleportRelative, TeleportRelativeRequest
-from turtlesim.srv import TeleportAbsolute, TeleportAbsoluteRequest
-from geometry_msgs.msg import Twist
-
 # Importing Math package for Pi
 import math
 
 # Using Random package to generate new angle in range
 from random import uniform
 
+# Importing essential ROS packages
+import rospy
+from geometry_msgs.msg import Twist
+from turtlesim.msg import Pose
+from turtlesim.srv import (
+    TeleportAbsolute,
+    TeleportAbsoluteRequest,
+    TeleportRelative,
+    TeleportRelativeRequest,
+)
+
 # Variables to store ball's location (x,y,theta)
-ball_x = 0.0
-ball_y = 0.0
-ball_theta = 0.0
+ball_x_ = 0.0
+ball_y_ = 0.0
+ball_theta_ = 0.0
 
 # Variables to store right_turtle's location (x,y,theta)
-right_x = 0.0
-right_y = 0.0
-right_theta = 0.0
+right_turtle_x_ = 0.0
+right_turtle_y_ = 0.0
+right_turtle_theta_ = 0.0
 
 # Variables to store left_turtle's location (x,y,theta)
-left_x = 0.0
-left_y = 0.0
-left_theta = 0.0
+left_turtle_x_ = 0.0
+left_turtle_y_ = 0.0
+left_turtle_theta_ = 0.0
 
 # Variables to store Right and Left player score's
-right_turtle_score = 0
-left_turtle_score = -1
+right_turtle_score_ = 0
+left_turtle_score_ = -1
 
 
-def reset_and_print_scores():
-    global right_turtle_score, left_turtle_score
-    print("Ball out of bound! Reset!")
+def print_player_scores():
+    """
+    Print the player scores when ball is out of bounds
+    """
+    global right_turtle_score_, left_turtle_score_
+    print("Ball out of bound! Printing the score's!")
     print("Current Score")
-    print("Right:", right_turtle_score, " Left:", left_turtle_score)
+    print("Right:", right_turtle_score_, " Left:", left_turtle_score_)
 
 
 def increment_right_score():
-    global right_turtle_score
-    right_turtle_score = right_turtle_score + 1
+    global right_turtle_score_
+    right_turtle_score_ = right_turtle_score_ + 1
 
 
 def increment_left_score():
-    global left_turtle_score
-    left_turtle_score = left_turtle_score + 1
+    global left_turtle_score_
+    left_turtle_score_ = left_turtle_score_ + 1
 
 
 def Teleport_Turtle_Absolute(x, y, theta):
@@ -72,24 +79,24 @@ def Teleport_Turtle_Relative(linear_translate, angular_translate):
 
 
 def callback(data):
-    global ball_x, ball_y, ball_theta
-    ball_x = data.x
-    ball_y = data.y
-    ball_theta = data.theta
+    global ball_x_, ball_y_, ball_theta_
+    ball_x_ = data.x
+    ball_y_ = data.y
+    ball_theta_ = data.theta
 
 
 def callback2(data):
-    global right_x, right_y, right_theta
-    right_x = data.x
-    right_y = data.y
-    right_theta = data.theta
+    global right_turtle_x_, right_turtle_y_, right_turtle_theta_
+    right_turtle_x_ = data.x
+    right_turtle_y_ = data.y
+    right_turtle_theta_ = data.theta
 
 
 def callback3(data):
-    global left_x, left_y, left_theta
-    left_x = data.x
-    left_y = data.y
-    left_theta = data.theta
+    global left_turtle_x_, left_turtle_y_, left_turtle_theta_
+    left_turtle_x_ = data.x
+    left_turtle_y_ = data.y
+    left_turtle_theta_ = data.theta
 
 
 def init():
@@ -98,9 +105,9 @@ def init():
     """
 
     # Accessing global variables
-    global ball_x, ball_y, ball_theta
-    global right_x, right_y, right_theta
-    global left_x, left_y, left_theta
+    global ball_x_, ball_y_, ball_theta_
+    global right_turtle_x_, right_turtle_y_, right_turtle_theta_
+    global left_turtle_x_, left_turtle_y_, left_turtle_theta_
 
     # Create a ROS node called as 'ball_node'
     rospy.init_node("ball_node", anonymous=True)
@@ -117,55 +124,59 @@ def init():
     rate = rospy.Rate(10)  # 10hz
 
     while not rospy.is_shutdown():
-        if ball_x >= 10.5 and ball_theta == 0.0:
+        if ball_x_ >= 10.5 and ball_theta_ == 0.0:
             Teleport_Turtle_Relative(1.0, math.radians(150))
             increment_right_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_x >= 10.5 and ball_theta > 0.0:
+        if ball_x_ >= 10.5 and ball_theta_ > 0.0:
             Teleport_Turtle_Relative(1.0, (2 * math.pi / 3))
             increment_right_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_x >= 10.5 and ball_theta < 0.0:
+        if ball_x_ >= 10.5 and ball_theta_ < 0.0:
             Teleport_Turtle_Relative(1.0, (-2 * math.pi / 3))
             increment_right_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_x <= 0.5 and ball_theta == 0.0:
+        if ball_x_ <= 0.5 and ball_theta_ == 0.0:
             Teleport_Turtle_Relative(1.0, math.radians(150))
             increment_left_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_x <= 0.5 and ball_theta < 0.0:
+        if ball_x_ <= 0.5 and ball_theta_ < 0.0:
             Teleport_Turtle_Relative(1.0, (2 * math.pi / 3))
             increment_left_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_x <= 0.5 and ball_theta > 0.0:
+        if ball_x_ <= 0.5 and ball_theta_ > 0.0:
             Teleport_Turtle_Relative(1.0, (-2 * math.pi / 3))
             increment_left_score()
-            reset_and_print_scores()
+            print_player_scores()
 
-        if ball_y <= 0.5 and ball_theta > -1.57:
+        if ball_y_ <= 0.5 and ball_theta_ > -1.57:
             Teleport_Turtle_Relative(0.5, (math.pi / 3))
 
-        if ball_y <= 0.5 and ball_theta < -1.57:
+        if ball_y_ <= 0.5 and ball_theta_ < -1.57:
             Teleport_Turtle_Relative(0.5, (-math.pi / 3))
 
-        if ball_y >= 10.5 and ball_theta < 1.57:
+        if ball_y_ >= 10.5 and ball_theta_ < 1.57:
             Teleport_Turtle_Relative(0.5, (-math.pi / 3))
 
-        if ball_y >= 10.5 and ball_theta > 1.57:
+        if ball_y_ >= 10.5 and ball_theta_ > 1.57:
             Teleport_Turtle_Relative(0.5, (math.pi / 3))
 
-        if (abs(ball_x - right_x)) < 0.5 and (abs(ball_y - right_y)) < 0.5:
+        if (abs(ball_x_ - right_turtle_x_)) < 0.5 and (
+            abs(ball_y_ - right_turtle_y_)
+        ) < 0.5:
             frand = uniform(-1, 1)
-            Teleport_Turtle_Absolute(ball_x, ball_y, frand)
+            Teleport_Turtle_Absolute(ball_x_, ball_y_, frand)
 
-        if (abs(ball_x - left_x)) < 0.5 and (abs(ball_y - left_y)) < 0.5:
+        if (abs(ball_x_ - left_turtle_x_)) < 0.5 and (
+            abs(ball_y_ - left_turtle_y_)
+        ) < 0.5:
             frand = uniform(1.6, 3.7)
-            Teleport_Turtle_Absolute(ball_x, ball_y, frand)
+            Teleport_Turtle_Absolute(ball_x_, ball_y_, frand)
 
         ball_vel.linear.x = 1.5
         ball_vel.angular.z = 0.0
