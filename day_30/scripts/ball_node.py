@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Importing Math package for Pi
+# Importing Math package for Pi, radians funnctions
 import math
 
 # Using Random package to generate new angle in range
@@ -42,57 +42,86 @@ def print_player_scores():
     Print the player scores when ball is out of bounds
     """
     global right_turtle_score_, left_turtle_score_
-    print("Ball out of bound! Printing the score's!")
+    print("Ball out of bound! Printing the score's !")
     print("Current Score")
     print("Right:", right_turtle_score_, " Left:", left_turtle_score_)
 
 
 def increment_right_score():
+    """
+    Increment Right Player Score
+    """
     global right_turtle_score_
     right_turtle_score_ = right_turtle_score_ + 1
 
 
 def increment_left_score():
+    """
+    Increment Left Player Score
+    """
     global left_turtle_score_
     left_turtle_score_ = left_turtle_score_ + 1
 
 
 def Teleport_Turtle_Absolute(x, y, theta):
+    """
+    Teleport's the Turtle to an Absolute Location (x,y,theta)
+    """
+
+    # Setup a Service Proxy
     teleport_turtle = rospy.ServiceProxy("/Ball/teleport_absolute", TeleportAbsolute)
     teleport_turtle_request = TeleportAbsoluteRequest()
 
+    # Fill the data packet
     teleport_turtle_request.x = x
     teleport_turtle_request.y = y
     teleport_turtle_request.theta = theta
 
+    # Call the service
     teleport_turtle(teleport_turtle_request)
 
 
 def Teleport_Turtle_Relative(linear_translate, angular_translate):
+    """
+    Teleport's the Turtle to a Relative Location (x_translation,y_translation)
+    """
+
+    # Setup a Service Proxy
     teleport_turtle = rospy.ServiceProxy("/Ball/teleport_relative", TeleportRelative)
     teleport_turtle_request = TeleportRelativeRequest()
 
+    # Fill the data packets
     teleport_turtle_request.linear = linear_translate
     teleport_turtle_request.angular = angular_translate
 
+    # Call the service
     teleport_turtle(teleport_turtle_request)
 
 
-def callback(data):
+def ball_pose_callback(data):
+    """
+    Updates the ball pose in x, y, theta continuosly
+    """
     global ball_x_, ball_y_, ball_theta_
     ball_x_ = data.x
     ball_y_ = data.y
     ball_theta_ = data.theta
 
 
-def callback2(data):
+def right_pose_callback(data):
+    """
+    Updates the right_turtle's pose in x, y, theta continuosly
+    """
     global right_turtle_x_, right_turtle_y_, right_turtle_theta_
     right_turtle_x_ = data.x
     right_turtle_y_ = data.y
     right_turtle_theta_ = data.theta
 
 
-def callback3(data):
+def left_pose_callback(data):
+    """
+    Updates the left_turtle's pose in x, y, theta continuosly
+    """
     global left_turtle_x_, left_turtle_y_, left_turtle_theta_
     left_turtle_x_ = data.x
     left_turtle_y_ = data.y
@@ -115,40 +144,61 @@ def init():
     # Wait for services to start before proceeding further
     rospy.wait_for_service("/Ball/teleport_relative")
 
+    # Setup a publisher object to publish to /Ball/cmd_vel topic
     pub = rospy.Publisher("/Ball/cmd_vel", Twist, queue_size=10)
-    sub = rospy.Subscriber("/Ball/pose", Pose, callback)
-    sub2 = rospy.Subscriber("/Right/pose", Pose, callback2)
-    sub3 = rospy.Subscriber("/Left/pose", Pose, callback3)
+
+    # Setup a subscriber object to sub to /Ball/Pose for Ball Location feedback
+    ball_pose_subscriber = rospy.Subscriber("/Ball/pose", Pose, ball_pose_callback)
+
+    # Setup a subscriber object to sub to /Right/Pose for Right_tutles Location feedback
+    right_pose_subscriber = rospy.Subscriber("/Right/pose", Pose, right_pose_callback)
+
+    # Setup a subscriber object to sub to /Left/Pose for Left_tutles Location feedback
+    left_pose_subscriber = rospy.Subscriber("/Left/pose", Pose, left_pose_callback)
+
+    # Create a variable to move ball later
     ball_vel = Twist()
 
-    rate = rospy.Rate(10)  # 10hz
+    # Setting the Publisher rate to 10Hz
+    rate = rospy.Rate(10)
 
+    # Start an Infinite loop until ROS is active
     while not rospy.is_shutdown():
+        # Ball out of Positive X bound (>10.5)
         if ball_x_ >= 10.5 and ball_theta_ == 0.0:
             Teleport_Turtle_Relative(1.0, math.radians(150))
             increment_right_score()
             print_player_scores()
 
+        # Ball out of Positive X bound (>10.5)
+        # and Angled upwards (Towards Top of screen)
         if ball_x_ >= 10.5 and ball_theta_ > 0.0:
             Teleport_Turtle_Relative(1.0, (2 * math.pi / 3))
             increment_right_score()
             print_player_scores()
 
+        # Ball out of Positive X bound (>10.5)
+        # and Angled downwards (Towards Bottom of screen)
         if ball_x_ >= 10.5 and ball_theta_ < 0.0:
             Teleport_Turtle_Relative(1.0, (-2 * math.pi / 3))
             increment_right_score()
             print_player_scores()
 
+        # Ball out of Negative X bound (<0.5)
         if ball_x_ <= 0.5 and ball_theta_ == 0.0:
             Teleport_Turtle_Relative(1.0, math.radians(150))
             increment_left_score()
             print_player_scores()
 
+        # Ball out of Negative X bound (<0.5)
+        # and Angled downwards (Towards Bottom of screen)
         if ball_x_ <= 0.5 and ball_theta_ < 0.0:
             Teleport_Turtle_Relative(1.0, (2 * math.pi / 3))
             increment_left_score()
             print_player_scores()
 
+        # Ball out of Negative X bound (<0.5)
+        # and Angled upwards (Towards Top of screen)
         if ball_x_ <= 0.5 and ball_theta_ > 0.0:
             Teleport_Turtle_Relative(1.0, (-2 * math.pi / 3))
             increment_left_score()
