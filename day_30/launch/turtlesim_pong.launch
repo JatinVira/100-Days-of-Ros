@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <launch>
-  <!-- Node 0 -->
-  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen"/>
+  <!-- Start the Turtlesim GUI node -->
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" />
 
-  <!-- Node 1 -->
+  <!-- Start the init node to spawn turtles -->
   <node pkg="day_30" type="init_node.py" name="init_node" output="screen"/>
 
-  <!-- Node 2 -->
+  <!-- Start the turtle that acts as a ball -->
   <node pkg="day_30" type="ball_node.py" name="ball_node" output="screen"/>
 
-  <!-- Node 3 -->
+  <!-- Start the node for teleoperation for two player turtles -->
   <node pkg="day_30" type="teleop_node" name="teleop_key_node" output="screen"/>
 
 </launch>
