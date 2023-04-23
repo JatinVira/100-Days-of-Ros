@@ -204,31 +204,44 @@ def init():
             increment_left_score()
             print_player_scores()
 
+        # Ball out of Negative Y bound (<0.5)
+        # and Angled towrads Right Turtle
         if ball_y_ <= 0.5 and ball_theta_ > -1.57:
             Teleport_Turtle_Relative(0.5, (math.pi / 3))
 
+        # Ball out of Negative Y bound (<0.5)
+        # and Angled towrads Left Turtle
         if ball_y_ <= 0.5 and ball_theta_ < -1.57:
             Teleport_Turtle_Relative(0.5, (-math.pi / 3))
 
+        # Ball out of Positive Y bound (>10.5)
+        # and Angled towrads Right Turtle
         if ball_y_ >= 10.5 and ball_theta_ < 1.57:
             Teleport_Turtle_Relative(0.5, (-math.pi / 3))
 
+        # Ball out of Positive Y bound (>10.5)
+        # and Angled towrads Left Turtle
         if ball_y_ >= 10.5 and ball_theta_ > 1.57:
             Teleport_Turtle_Relative(0.5, (math.pi / 3))
 
+        # Collision of Ball with Right Turtle
         if (abs(ball_x_ - right_turtle_x_)) < 0.5 and (
             abs(ball_y_ - right_turtle_y_)
         ) < 0.5:
             frand = uniform(-1, 1)
+            # Keeping the same (x,y) chnage the theta
             Teleport_Turtle_Absolute(ball_x_, ball_y_, frand)
 
+        # Collision of Ball with Left Turtle
         if (abs(ball_x_ - left_turtle_x_)) < 0.5 and (
             abs(ball_y_ - left_turtle_y_)
         ) < 0.5:
             frand = uniform(1.6, 3.7)
+            # Keeping the same (x,y) chnage the theta
             Teleport_Turtle_Absolute(ball_x_, ball_y_, frand)
 
-        ball_vel.linear.x = 1.5
+        # Logic to keep Ball moving
+        ball_vel.linear.x = 2.0
         ball_vel.angular.z = 0.0
         pub.publish(ball_vel)
         rate.sleep()
