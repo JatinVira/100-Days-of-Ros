@@ -2,7 +2,7 @@
 ![Short Game Play](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong.gif)   
 
 -----------------------  
-## Package Description:      
+## Package Description      
 This repository contains code for Day 30 of the [100 Days of ROS challenge](https://github.com/JatinVira/100-Days-of-Ros), which implements the Pong arcade video game for the Robot Operating System (ROS 1 Noetic) using `turtlesim`.    
 The intention of developing this package was to take something as simple as turtlesim, use reference from other projects, and develop a cool game out of it using ROS. Also explaining the process of breaking down problem into smaller modules and solving each module appropriately.
 The inspiration for this project was drawn from [ros-turtle-pong](https://fjp.at/ros/turtle-pong/)   
@@ -36,5 +36,8 @@ Launch the project using the following launch file:
 ```console
 roslaunch day_30 turtlesim_pong.launch
 ```
-
+Click on the terminal and press the Up/Down, W/S keys to then move the turtle   
 --------------------------
+## ROS Node Graph
+
+![rqt node graph](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong_rqt_graph.png?raw=true)
