@@ -1,5 +1,7 @@
 # 100-Days-of-Ros: Day 30   
-![Short Game Play](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong.gif)   
+
+![Short Game Play](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong.gif)      
+
 
 -----------------------  
 ## Package Description      
@@ -35,9 +37,12 @@ cd catkin_ws/src/100-Days-of-Ros/day_30/
 Launch the project using the following launch file:
 ```console
 roslaunch day_30 turtlesim_pong.launch
-```
-Click on the terminal and press the Up/Down, W/S keys to then move the turtle   
+```   
+Click on the terminal and press the Up/Down, W/S keys to then move the turtle     
+
 --------------------------
 ## ROS Node Graph
 
-![rqt node graph](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong_rqt_graph.png?raw=true)
+![rqt node graph](https://github.com/JatinVira/100-Days-of-Ros/blob/main/image/turtlesim_pong_rqt_graph.png?raw=true)      
+
+
