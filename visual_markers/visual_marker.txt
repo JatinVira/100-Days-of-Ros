@@ -1,0 +1,18 @@
+Visualization in ros is a very important topic in ros , it is very essential we get to visualize a diven data by a sensor while using ros . We can use the visualization marker package to do so . By adding 
+markers. This markers can either be an arrow, a square, a box , a sphere or any other shapes you prefer.
+
+# INSTALLATION OF REQUIRED DEPENDECIES/PACKAGES WE NEED.
+
+1 . sudo apt-get install ros-<ros_distro>-visualization-msgs 
+
+Once this is install , then you source the workspace in which the node is located and run the node with the command below.
+
+NOTE: You have to adjust your CmakeLists.txt and package.xml to get this to work.
+
+
+- rosrun visual_markers visual_markerss
+
+
+![Screenshot from 2023-04-17 19-00-21](https://user-images.githubusercontent.com/97457075/232610230-e51721d6-810e-438e-b03c-dc5597530ef0.png)
+
+![Screenshot from 2023-04-17 19-06-47](https://user-images.githubusercontent.com/97457075/232610246-2a8a2eb5-84e2-4841-912a-f6d3ccec483c.png)
